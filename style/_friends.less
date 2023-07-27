@@ -1,0 +1,260 @@
+// main: style.less
+
+.friends {
+    background-color: @color-light-i;
+    padding: 2.3rem;
+
+    & h3 {
+        text-align: center;
+        margin: auto;
+        font-size: 3.1rem;
+        font-family: georgia-regular;
+        width: 35rem;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-left {
+        width: 4rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &-right {
+        width: 4rem;
+        margin-right: 1rem;
+        margin-top: 5rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &-btn {
+        color: @color-dark-3xl;
+        background-color: @color-primary;
+        border: none;
+        padding: 1.2rem 3.6rem;
+        font-size: 1.45rem;
+        font-family: georgia-regular;
+        border-radius: 3rem;
+        margin: auto;
+        margin-top: 4.5rem;
+        display: block;
+        transition: background 0.5s;
+    }
+
+    &-btns {
+        display: none;
+    }
+
+    &-wheel {
+        width: 77rem;
+        margin-top: 5rem;
+        overflow: hidden;
+    }
+
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 133.1rem;
+        right: 28rem;
+    }
+
+    &-item {
+        width: 21rem;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        background-color: @color-light-s;
+        padding-bottom: 2rem;
+
+        & img {
+            width: 100%;
+        }
+
+        & h5 {
+            margin-top: 1.7rem;
+            font-family: georgia-regular;
+            text-align: center;
+            font-size: 1.68rem;
+            color: @color-dark-i;
+        }
+
+        & .learn {
+            color: @color-dark-3xl;
+            background-color: @color-light-s;
+            border: 0.2rem solid @color-primary;
+            padding: 1.2rem 3.6rem;
+            font-size: 1.45rem;
+            font-family: georgia-regular;
+            border-radius: 3rem;
+            margin: auto;
+            margin-top: 2.2rem;
+            display: block;
+            transition: background 0.5s;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+    .friends {
+        padding: 11rem 5rem 12.8rem 5rem;
+    
+        & h3 {
+            font-size: 5.1rem;
+            width: 55rem;
+        }
+    
+        &-left {
+            width: 7rem;
+            margin-left: -1rem;
+            margin-top: 8.5rem;
+    
+            & img {
+                width: 100%;
+            }
+        }
+    
+        &-right {
+            width: 7rem;
+            margin-right: -1rem;
+            margin-top: 8.5rem;
+    
+            & img {
+                width: 100%;
+            }
+        }
+    
+        &-btn {
+            padding: 2rem 6rem;
+            font-size: 2.5rem;
+            border-radius: 4rem;
+            margin-top: 8rem;
+        }
+    
+        &-wheel {
+            width:75rem;
+            margin-top: 8rem;
+        }
+    
+        &-container {
+            width: 195rem;
+            right: 40rem;
+        }
+    
+        &-item {
+            width: 34.5rem;
+            border-radius: 0.7rem;
+            padding-bottom: 3.5rem;
+    
+            & h5 {
+                margin-top: 4rem;
+                font-size: 2.8rem;
+            }
+    
+            & .learn {
+                border: 0.3rem solid @color-primary;
+                padding: 1.8rem 5.5rem;
+                font-size: 2.45rem;
+                border-radius: 3.4rem;
+                margin-top: 3.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .friends {
+        padding: 11rem 5rem 12.8rem 5rem;
+
+        &-wrapper {
+            flex-direction: column;
+        }
+    
+        & h3 {
+            font-size: 8.8rem;
+            width: 90rem;
+        }
+    
+        &-left {
+            width: 7rem;
+            margin-left: -1rem;
+            margin-top: 8.5rem;
+    
+            & img {
+                width: 100%;
+            }
+        }
+    
+        &-right {
+            width: 7rem;
+            margin-right: -1rem;
+            margin-top: 8.5rem;
+    
+            & img {
+                width: 100%;
+            }
+        }
+    
+        &-btn {
+            padding: 2rem 6rem;
+            font-size: 2.5rem;
+            border-radius: 4rem;
+            margin-top: 8rem;
+        }
+
+        & .btn1 {
+            display: none;
+        }
+
+        &-btns {
+            display: block;
+        }
+    
+        &-wheel {
+            width:95rem;
+            margin-top: 8rem;
+        }
+    
+        &-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 600rem;
+            right: 123.3rem;
+        }
+    
+        &-item {
+            width: 84rem;
+            border-radius: 2rem;
+            padding-bottom: 3.5rem;
+    
+            & h5 {
+                margin-top: 4rem;
+                font-size: 2.8rem;
+                color: @color-dark-i;
+            }
+    
+            & .learn {
+                border: 0.3rem solid @color-primary;
+                padding: 1.8rem 5.5rem;
+                font-size: 2.45rem;
+                font-family: georgia-regular;
+                border-radius: 3.4rem;
+                margin: auto;
+                margin-top: 3.8rem;
+                display: block;
+                transition: background 0.5s;
+            }
+        }
+    }
+}

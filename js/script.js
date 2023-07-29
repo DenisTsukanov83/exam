@@ -93,8 +93,8 @@ addEventListener("DOMContentLoaded", () => {
     ];
     
     const friendsContainer = document.querySelector('.friends-container');
-    const btnLeft = document.querySelector('.friends-left');
-    const btnRight = document.querySelector('.friends-right');
+    const btnsLeft = document.querySelectorAll('.friends-left');
+    const btnsRight = document.querySelectorAll('.friends-right');
     let access = true;
     
     let currentIndex = 0;
@@ -113,23 +113,23 @@ addEventListener("DOMContentLoaded", () => {
         item.className = 'friends-item';
     
         item.append(img, h5, btn);
-        return item
+        return item;
     }
     
-    friendsContainer.append(createItem(1),
-    createItem(2),
-    createItem(3), createItem(4), createItem(5))
+    friendsContainer.append(createItem(1), createItem(2), createItem(3), createItem(4), createItem(5));
     
     function appendEl() {
         access = false;
         const item = createItem(currentIndex);
 
         friendsContainer.querySelectorAll('.friends-item').forEach(el => {
-            if(window.innerWidth > 1000) {
-                el.classList.add('to-left');
-            }
-            if(window.innerWidth < 1000 && window.innerWidth > 768) {
-                el.classList.add('to-left-l');
+            switch(true) {
+                case window.innerWidth > 1000: el.classList.add('to-left');
+                break;
+                case window.innerWidth < 1000 && window.innerWidth > 768: el.classList.add('to-left-l');
+                break;
+                case window.innerWidth < 768: el.classList.add('to-left-s');
+                break;
             }
         })
 
@@ -140,11 +140,11 @@ addEventListener("DOMContentLoaded", () => {
             }
 
             friendsContainer.querySelectorAll('.friends-item').forEach(el => {
-                el.classList.remove('to-left', 'to-left-l');
+                el.classList.remove('to-left', 'to-left-l', 'to-left-s');
                 
             })
             access = true;
-        }, 500)
+        }, 450)
     }
     
     function prependEl() {
@@ -152,13 +152,17 @@ addEventListener("DOMContentLoaded", () => {
         const item = createItem(currentIndex);
 
         friendsContainer.querySelectorAll('.friends-item').forEach(el => {
-            if(window.innerWidth > 1000) {
-                el.classList.add('to-right');
+            switch(true) {
+                case window.innerWidth > 1000: el.classList.add('to-right');
+                break;
+                case window.innerWidth < 1000 && window.innerWidth > 768: el.classList.add('to-right-l');
+                break;
+                case window.innerWidth < 768: el.classList.add('to-right-s');
+                break;
             }
             if(window.innerWidth < 1000 && window.innerWidth > 768) {
                 el.classList.add('to-right-l');
             }
-            
         })
 
         setTimeout( () => {
@@ -169,11 +173,11 @@ addEventListener("DOMContentLoaded", () => {
             }
 
             friendsContainer.querySelectorAll('.friends-item').forEach(el => {
-                el.classList.remove('to-right', 'to-right-l');
+                el.classList.remove('to-right', 'to-right-l', 'to-right-s');
                 
             })
             access = true;
-        }, 500)
+        }, 450)
 
         
     }
@@ -186,23 +190,20 @@ addEventListener("DOMContentLoaded", () => {
     function decr() {
         currentIndex > 0 ? currentIndex-- : currentIndex = pets.length - 1;
     }
-    
-    btnLeft.addEventListener('click', () => {
-        if(access) {
-            incr();
-            appendEl();
-        }
-    })
-    
-    btnRight.addEventListener('click', () => {
-        if(access) {
-            decr();
-            prependEl();
-        }
-    })
-    
-    
-    /* console.log(window.innerWidth < 1024) */
+
+    function addEventList(btns, index, func) {
+        btns.forEach(el => {
+            el.addEventListener('click', () => {
+                if(access) {
+                    index();
+                    func();
+                }
+            })
+        })
+    }
+
+    addEventList(btnsLeft, incr, appendEl);
+    addEventList(btnsRight, decr, prependEl);
 });
 
 

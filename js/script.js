@@ -126,9 +126,9 @@ addEventListener("DOMContentLoaded", () => {
             switch(true) {
                 case window.innerWidth > 1000: el.classList.add('to-left');
                 break;
-                case window.innerWidth < 1000 && window.innerWidth > 768: el.classList.add('to-left-l');
+                case window.innerWidth <= 1000 && window.innerWidth > 768: el.classList.add('to-left-l');
                 break;
-                case window.innerWidth < 768: el.classList.add('to-left-s');
+                case window.innerWidth <= 768: el.classList.add('to-left-s');
                 break;
             }
         })
@@ -155,13 +155,10 @@ addEventListener("DOMContentLoaded", () => {
             switch(true) {
                 case window.innerWidth > 1000: el.classList.add('to-right');
                 break;
-                case window.innerWidth < 1000 && window.innerWidth > 768: el.classList.add('to-right-l');
+                case window.innerWidth <= 1000 && window.innerWidth > 768: el.classList.add('to-right-l');
                 break;
-                case window.innerWidth < 768: el.classList.add('to-right-s');
+                case window.innerWidth <= 768: el.classList.add('to-right-s');
                 break;
-            }
-            if(window.innerWidth < 1000 && window.innerWidth > 768) {
-                el.classList.add('to-right-l');
             }
         })
 

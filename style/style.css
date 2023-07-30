@@ -561,14 +561,16 @@ html {
   color: #292929;
   background-color: #FAFAFA;
   border: 0.2rem solid #F1CDB3;
-  padding: 1.2rem 3.6rem;
+  padding: 0.8rem 0rem;
   font-size: 1.45rem;
   font-family: georgia-regular;
   border-radius: 3rem;
   margin: auto;
-  margin-top: 2.2rem;
+  margin-top: 2.4rem;
   display: block;
   transition: background 0.5s;
+  text-align: center;
+  width: 15rem;
 }
 @media screen and (max-width: 1000px) and (min-width: 769px) {
   .friends {
@@ -619,10 +621,11 @@ html {
   }
   .friends-item .learn {
     border: 0.3rem solid #F1CDB3;
-    padding: 1.8rem 5.5rem;
-    font-size: 2.45rem;
+    padding: 1.3rem 0;
+    font-size: 2.4rem;
     border-radius: 3.4rem;
     margin-top: 3.8rem;
+    width: 24rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -694,10 +697,11 @@ html {
   }
   .friends-item .learn {
     border: 0.6rem solid #F1CDB3;
-    padding: 4.2rem 14rem;
+    padding: 3.4rem 0;
     font-size: 5.8rem;
     border-radius: 10rem;
     margin-top: 9.2rem;
+    width: 59rem;
   }
 }
 @keyframes to-left {
@@ -992,5 +996,212 @@ html {
   .help-item:nth-child(9) div {
     width: 45rem;
   }
+}
+.donation {
+  display: flex;
+  justify-content: space-between;
+  padding: 7.3rem 10rem 7.5rem 14.3rem;
+  background-color: #F6F6F6;
+}
+.donation-dog {
+  width: 39.5rem;
+}
+.donation-dog img {
+  width: 100%;
+}
+.donation-content {
+  width: 34rem;
+}
+.donation-content h3 {
+  font-family: georgia-regular;
+  font-size: 2.8rem;
+  letter-spacing: 0.15rem;
+  width: 24rem;
+  margin-top: -1rem;
+  line-height: 3.5rem;
+}
+.donation-subtitle {
+  font-size: 1.31rem;
+}
+.donation-card {
+  display: flex;
+  background-color: #F1CDB3;
+  margin-top: 1.4rem;
+  margin-left: 0.2rem;
+  padding: 0.6rem 0 0.4rem 1.2rem;
+  width: 27.1rem;
+  border-radius: 0.8rem;
+}
+.donation-card a {
+  color: #545454;
+  font-family: georgia-regular;
+  font-size: 1.74rem;
+  margin-left: 1.1rem;
+  margin-top: -0.2rem;
+}
+.donation-icon {
+  width: 2.5rem;
+}
+.donation-icon img {
+  width: 100%;
+}
+.donation-text {
+  font-family: arial-i;
+  color: #B2B2B2;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  width: 30rem;
+}
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+  .donation {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 11.2rem 10rem 7.5rem 25.2rem;
+  }
+  .donation-dog {
+    width: 64rem;
+    margin-top: 8rem;
+    margin-left: -7rem;
+  }
+  .donation-content {
+    width: 34rem;
+  }
+  .donation-content h3 {
+    font-size: 4.8rem;
+    letter-spacing: 0.15rem;
+    width: 38rem;
+    margin-top: -1rem;
+    line-height: 5.9rem;
+  }
+  .donation-subtitle {
+    font-size: 2.19rem;
+    width: 45rem;
+    margin-top: 2rem;
+  }
+  .donation-card {
+    margin-top: 2.1rem;
+    margin-left: 0.2rem;
+    padding: 1.3rem 0 0.7rem 1.8rem;
+    width: 45.3rem;
+    border-radius: 1.2rem;
+  }
+  .donation-card a {
+    font-size: 2.6rem;
+    margin-left: 2rem;
+    margin-top: -0.4rem;
+    letter-spacing: 0.15rem;
+  }
+  .donation-icon {
+    width: 4rem;
+  }
+  .donation-text {
+    margin-top: 2.5rem;
+    font-size: 1.57rem;
+    width: 48rem;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .donation {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 14rem 7.5rem 7.5rem 7.5rem;
+  }
+  .donation-dog {
+    width: 81rem;
+    margin-top: 13rem;
+    margin-left: 1.5rem;
+  }
+  .donation-content {
+    width: 34rem;
+  }
+  .donation-content h3 {
+    font-size: 7.8rem;
+    letter-spacing: 0.45rem;
+    width: 65rem;
+    margin-top: -1rem;
+    line-height: 9.5rem;
+    margin-left: 10rem;
+    text-align: center;
+  }
+  .donation-subtitle {
+    font-size: 4.5rem;
+    width: 85rem;
+    margin-top: 7rem;
+    font-family: georgia-regular;
+    letter-spacing: 0.07rem;
+  }
+  .donation-card {
+    margin-top: 6.5rem;
+    margin-left: -1.5rem;
+    padding: 3.1rem 0 2.5rem 4.8rem;
+    width: 87.3rem;
+    border-radius: 2.6rem;
+  }
+  .donation-card a {
+    font-size: 4.5rem;
+    margin-left: 4.5rem;
+    margin-top: 0.2rem;
+    letter-spacing: 0.37rem;
+  }
+  .donation-icon {
+    width: 9.4rem;
+  }
+  .donation-text {
+    margin-top: 6.2rem;
+    margin-left: -1.1rem;
+    font-size: 3.8rem;
+    width: 89rem;
+    letter-spacing: 0.05rem;
+  }
+}
+.modal {
+  width: 70.3rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+}
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1.5rem 5rem 0 !important;
+}
+.modal-photo {
+  width: 39rem;
+}
+.modal-photo img {
+  width: 100%;
+}
+.modal-param {
+  margin-top: 2.3rem;
+}
+.modal-param h5 {
+  text-align: start;
+  font-size: 3.1rem;
+}
+.modal-subtitle {
+  font-size: 1.7rem;
+  font-family: gaorgia-regular;
+  margin-left: 0.5rem;
+  letter-spacing: 0.07rem;
+  margin-left: 0.2rem;
+  margin-top: -0.5rem;
+}
+.modal-descr {
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+  width: 27.5rem;
+  margin-top: 3rem;
+  line-height: 1.3rem;
+}
+.modal-list {
+  margin-top: 2.7rem;
+  margin-left: 1.1rem;
+}
+.modal-list li {
+  font-family: georgia-regular;
+  font-size: 1.4rem;
+  list-style-type: disc !important;
+}
+.modal-list li::marker {
+  color: #F1CDB3;
 }
 /*# sourceMappingURL=./style.css.map */

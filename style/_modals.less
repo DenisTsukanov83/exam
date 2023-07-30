@@ -1,0 +1,63 @@
+// main: style.less
+
+.modal {
+    width: 70.3rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    
+    &-content {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0rem 1.5rem 5rem 0 !important;
+    }
+
+    &-photo {
+        width: 39rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &-param {
+        margin-top: 2.3rem;
+
+        & h5 {
+            text-align: start;
+            font-size: 3.1rem;
+        }
+    }
+
+    &-subtitle {
+        font-size: 1.7rem;
+        font-family: gaorgia-regular;
+        margin-left: 0.5rem;
+        letter-spacing: 0.07rem;
+        margin-left: 0.2rem;
+        margin-top: -0.5rem;
+    }
+
+    &-descr {
+        font-size: 1.2rem;
+        letter-spacing: 0.06rem;
+        width: 27.5rem;
+        margin-top: 3rem;
+        line-height: 1.3rem;
+    }
+
+    &-list {
+        margin-top: 2.7rem;
+        margin-left: 1.1rem;
+        & li {
+            font-family: georgia-regular;
+            font-size: 1.4rem;
+            list-style-type: disc !important;
+
+            &::marker {
+                color: @color-primary;
+            }
+
+        }
+    }
+}

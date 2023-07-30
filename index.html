@@ -97,11 +97,11 @@
                 <div class="friends-left btn1">
                     <img src="assets/icons/button_left.png" alt="button_left.png">
                 </div>
-                    <div class="friends-wheel">
-                        <div class="friends-container">
+                <div class="friends-wheel">
+                    <div class="friends-container">
 
-                        </div>
                     </div>
+                </div>
                 <div class="friends-right btn1">
                     <img src="assets/icons/button_right.png" alt="button_right.png">
                 </div>
@@ -158,6 +158,29 @@
                 </div>
             </div>
         </section>
+
+        <section class="donation">
+            <div class="donation-dog">
+                <img src="assets/icons/donation-dog.svg" alt="donation-dog.svg">
+            </div>
+            <div class="donation-content">
+                <h3>You can also make a donation</h3>
+                <div class="donation-subtitle">
+                    Name of the bank / Type of bank account
+                </div>
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <img src="assets/icons/credit-card.svg" alt="credit-card.svg">
+                    </div>
+                    <a href="#">8380 2880 8028 8791 7435</a>
+                </div>
+                <div class="donation-text">
+                    Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at
+                    libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
+                    malesuada fames ac ante ipsum primis in faucibus.
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -172,6 +195,8 @@
                 draggable: true,
                 preventScrolling: true,
             });
+
+            $('.modal').modal({});
 
             $('.parallax').parallax();
         });

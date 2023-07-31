@@ -23,6 +23,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* &::-webkit-scrollbar {
+    width: 0;
+} */
 body,
 html {
   font-size: 1vw;
@@ -704,6 +707,164 @@ html {
     width: 59rem;
   }
 }
+.modal {
+  width: 69.5rem;
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+  max-height: 81%;
+}
+.modal::-webkit-scrollbar {
+  width: 0;
+}
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1.5rem 0 0 !important;
+}
+.modal-photo {
+  width: 39rem;
+}
+.modal-photo img {
+  width: 100%;
+}
+.modal-param {
+  margin-top: 2.3rem;
+}
+.modal-param h5 {
+  text-align: start;
+  font-size: 3.1rem;
+}
+.modal-subtitle {
+  font-size: 1.7rem;
+  font-family: gaorgia-regular;
+  margin-left: 0.5rem;
+  letter-spacing: 0.07rem;
+  margin-left: 0.2rem;
+  margin-top: -0.5rem;
+}
+.modal-descr {
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+  width: 27.5rem;
+  margin-top: 3rem;
+  line-height: 1.3rem;
+}
+.modal-list {
+  margin-top: 2.7rem;
+  margin-left: 1.1rem;
+}
+.modal-list li {
+  font-family: georgia-regular;
+  font-size: 1.4rem;
+  list-style-type: disc !important;
+}
+.modal-list li::marker {
+  color: #F1CDB3;
+}
+.modal-close {
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+  .modal {
+    width: 82rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    max-height: max-content;
+  }
+  .modal-content {
+    padding: 0rem 1.3rem 2rem 0 !important;
+  }
+  .modal-photo {
+    width: 45rem;
+  }
+  .modal-param {
+    margin-top: -2rem;
+  }
+  .modal-param h5 {
+    font-size: 5rem;
+  }
+  .modal-subtitle {
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    letter-spacing: 0.07rem;
+    margin-left: 0.2rem;
+    margin-top: -0.5rem;
+  }
+  .modal-descr {
+    font-size: 1.77rem;
+    letter-spacing: 0.06rem;
+    width: 33.5rem;
+    margin-top: 2.3rem;
+    line-height: 1.8rem;
+  }
+  .modal-list {
+    margin-top: 2rem;
+    margin-left: 1.4rem;
+  }
+  .modal-list li {
+    font-size: 2.2rem;
+    letter-spacing: 0.05rem;
+    line-height: 3rem;
+  }
+  .modal-close {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .modal {
+    width: 75.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    max-height: max-content;
+  }
+  .modal-content {
+    padding: 0rem 1.3rem 5rem 0 !important;
+  }
+  .modal-photo {
+    display: none;
+  }
+  .modal-param {
+    margin-top: -2rem;
+    width: 100%;
+  }
+  .modal-param h5 {
+    font-size: 12rem;
+    text-align: center;
+  }
+  .modal-subtitle {
+    font-size: 7.3rem;
+    letter-spacing: 0.07rem;
+    margin-top: 1.7rem;
+    text-align: center;
+  }
+  .modal-descr {
+    font-size: 4.5rem;
+    letter-spacing: 0.15rem;
+    width: 100%;
+    margin-top: 4.5rem;
+    line-height: 4rem;
+    text-align: justify;
+    padding: 0 3rem;
+  }
+  .modal-list {
+    margin-top: 10rem;
+    margin-left: 8rem;
+  }
+  .modal-list li {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    line-height: 7rem;
+  }
+  .modal-close {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+}
 @keyframes to-left {
   0% {
     transform: translatex(0px);
@@ -1104,7 +1265,7 @@ html {
   .donation {
     display: flex;
     flex-direction: column-reverse;
-    padding: 14rem 7.5rem 7.5rem 7.5rem;
+    padding: 14rem 7.5rem 12.5rem 7.5rem;
   }
   .donation-dog {
     width: 81rem;
@@ -1154,54 +1315,189 @@ html {
     letter-spacing: 0.05rem;
   }
 }
-.modal {
-  width: 70.3rem;
-  margin-top: 4rem;
-  border-radius: 1rem;
+.footer {
+  display: grid;
+  grid-template-columns: 34.3rem 30rem 30rem;
+  padding: 3rem 3.1rem 0 3.1rem;
+  background: url(../assets/icons/footer/footer-bg-1280.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
 }
-.modal-content {
+.footer h3 {
+  font-family: georgia-regular;
+  color: #FFFFFF;
+  font-size: 2.85rem;
+  margin-top: 1.4rem;
+  letter-spacing: 0.11rem;
+  line-height: 3.5rem;
+  width: 23rem;
+  margin-bottom: 3rem;
+}
+.footer-links {
   display: flex;
   justify-content: space-between;
-  padding: 0rem 1.5rem 5rem 0 !important;
+  color: #F1CDB3;
+  width: 19.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.08rem;
+  margin-bottom: 3.5rem;
 }
-.modal-photo {
-  width: 39rem;
+.footer-contacts img {
+  width: 3rem;
 }
-.modal-photo img {
+.footer-contacts .footer-links:last-child {
+  width: 18.6rem;
+  letter-spacing: 0.05rem;
+}
+.footer-locations img {
+  width: 1.7rem;
+}
+.footer-boston {
+  width: 25rem;
+  margin-top: -1rem;
+}
+.footer-boston > div {
+  width: 22rem;
+  margin-top: 0.8rem;
+  line-height: 1.7rem;
+}
+.footer-london {
+  margin-top: -1rem;
+  width: 21rem;
+}
+.footer-photo {
+  width: 23.5rem;
+  margin-left: 6rem;
+}
+.footer-photo img {
   width: 100%;
 }
-.modal-param {
-  margin-top: 2.3rem;
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40rem 40.5rem;
+    padding: 2.6rem 8.5rem 0 8.5rem;
+    background: url(../assets/icons/footer/footer-bg-768.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+  }
+  .footer h3 {
+    font-size: 4.8rem;
+    letter-spacing: 0.15rem;
+    line-height: 6rem;
+    width: 40rem;
+    margin-bottom: 5rem;
+  }
+  .footer-links {
+    width: 32.5rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.08rem;
+    margin-bottom: 5rem;
+  }
+  .footer-contacts img {
+    width: 5.1rem;
+  }
+  .footer-contacts .footer-links:last-child {
+    width: 31rem;
+    letter-spacing: 0.05rem;
+  }
+  .footer-locations {
+    margin-left: 4rem;
+  }
+  .footer-locations img {
+    width: 2.6rem;
+  }
+  .footer-boston {
+    width: 40rem;
+    margin-top: -2rem;
+  }
+  .footer-boston > div {
+    width: 35rem;
+    margin-top: 0.8rem;
+    line-height: 3rem;
+  }
+  .footer-london {
+    margin-top: -1rem;
+    width: 35rem;
+  }
+  .footer-photo {
+    grid-column: 1 / 3;
+    width: 39rem;
+    margin-left: 22rem;
+  }
+  .footer-photo img {
+    width: 100%;
+  }
 }
-.modal-param h5 {
-  text-align: start;
-  font-size: 3.1rem;
-}
-.modal-subtitle {
-  font-size: 1.7rem;
-  font-family: gaorgia-regular;
-  margin-left: 0.5rem;
-  letter-spacing: 0.07rem;
-  margin-left: 0.2rem;
-  margin-top: -0.5rem;
-}
-.modal-descr {
-  font-size: 1.2rem;
-  letter-spacing: 0.06rem;
-  width: 27.5rem;
-  margin-top: 3rem;
-  line-height: 1.3rem;
-}
-.modal-list {
-  margin-top: 2.7rem;
-  margin-left: 1.1rem;
-}
-.modal-list li {
-  font-family: georgia-regular;
-  font-size: 1.4rem;
-  list-style-type: disc !important;
-}
-.modal-list li::marker {
-  color: #F1CDB3;
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80em 78rem 82.5rem;
+    padding: 10em 0rem 0 0rem;
+    background: url(../assets/icons/footer/footer-bg-320.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+  }
+  .footer h3 {
+    font-size: 7.9rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    line-height: 10rem;
+    width: 80rem;
+    margin-bottom: 12.9rem;
+    margin-left: 0rem;
+    margin-top: -1rem;
+  }
+  .footer-links {
+    width: 78rem;
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 13rem;
+    margin-left: 0.5rem;
+    align-items: center;
+  }
+  .footer-contacts {
+    margin-left: 30px;
+  }
+  .footer-contacts img {
+    width: 12rem;
+  }
+  .footer-contacts .footer-links:last-child {
+    width: 74rem;
+    letter-spacing: 0.4rem;
+    margin-left: 3rem;
+  }
+  .footer-locations {
+    margin-left: 2.5rem;
+  }
+  .footer-locations h3 {
+    margin-top: -3.3rem;
+    margin-left: 8rem;
+  }
+  .footer-locations img {
+    width: 7rem;
+  }
+  .footer-boston {
+    width: 93rem;
+    margin-top: 14rem;
+  }
+  .footer-boston > div {
+    width: 80rem;
+    margin-top: -2rem;
+    line-height: 7rem;
+  }
+  .footer-london {
+    margin-top: -0.5rem;
+    width: 83rem;
+  }
+  .footer-photo {
+    width: 80rem;
+    margin-left: 10rem;
+  }
+  .footer-photo img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=./style.css.map */

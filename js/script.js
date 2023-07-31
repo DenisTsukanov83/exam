@@ -110,7 +110,9 @@ addEventListener("DOMContentLoaded", () => {
                             <a class="waves-effect waves-light modal-trigger learn" href="#modal${i + 1}">Learn more</a>
                         `;
         createModals(i, item);
-        $('.modal').modal(); //Инициализация модальных окон
+        $('.modal').modal({
+            preventScrolling: false,
+        }); //Инициализация модальных окон
         return item;
     }
 
@@ -133,9 +135,6 @@ addEventListener("DOMContentLoaded", () => {
                                         <li>Diseases: <span>${pets[i].diseases}</span></li>
                                         <li>Parasites: <span>${pets[i].parasites}</span></li>
                                     </ul>
-                                    <div class="modal-footer">
-                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                                    </div>
                                 </div>
                             </div>
                         `;

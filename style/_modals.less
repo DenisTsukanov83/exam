@@ -1,15 +1,18 @@
 // main: style.less
 
 .modal {
-    width: 70.3rem;
-    margin-top: 4rem;
-    border-radius: 1rem;
-    
+    width: 69.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    max-height: 81%;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
     &-content {
         display: flex;
         justify-content: space-between;
 
-        padding: 0rem 1.5rem 5rem 0 !important;
+        padding: 0rem 1.5rem 0 0 !important;
     }
 
     &-photo {
@@ -58,6 +61,127 @@
                 color: @color-primary;
             }
 
+        }
+    }
+
+    &-close {
+        position: relative;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+    .modal {
+        width: 82rem;
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+        max-height: max-content;
+        &-content {
+            padding: 0rem 1.3rem 2rem 0 !important;
+        }
+    
+        &-photo {
+            width: 45rem;
+        }
+    
+        &-param {
+            margin-top: -2rem;
+    
+            & h5 {
+                font-size: 5rem;
+            }
+        }
+    
+        &-subtitle {
+            font-size: 3rem;
+            margin-left: 0.5rem;
+            letter-spacing: 0.07rem;
+            margin-left: 0.2rem;
+            margin-top: -0.5rem;
+        }
+    
+        &-descr {
+            font-size: 1.77rem;
+            letter-spacing: 0.06rem;
+            width: 33.5rem;
+            margin-top: 2.3rem;
+            line-height: 1.8rem;
+        }
+    
+        &-list {
+            margin-top: 2rem;
+            margin-left: 1.4rem;
+            & li {
+                font-size: 2.2rem;
+                letter-spacing: 0.05rem;
+                line-height: 3rem;
+            }
+        }
+    
+        &-close {
+            position: relative;
+            top: 0;
+            z-index: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .modal {
+        width: 75.5rem;
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+        max-height: max-content;
+        &-content {
+            padding: 0rem 1.3rem 5rem 0 !important;
+        }
+    
+        &-photo {
+            display: none;
+        }
+    
+        &-param {
+            margin-top: -2rem;
+            width: 100%;
+    
+            & h5 {
+                font-size: 12rem;
+                text-align: center;
+            }
+        }
+    
+        &-subtitle {
+            font-size: 7.3rem;
+            letter-spacing: 0.07rem;
+            margin-top: 1.7rem;
+            text-align: center;
+        }
+    
+        &-descr {
+            font-size: 4.5rem;
+            letter-spacing: 0.15rem;
+            width: 100%;
+            margin-top: 4.5rem;
+            line-height: 4rem;
+            text-align: justify;
+            padding: 0 3rem;
+        }
+    
+        &-list {
+            margin-top: 10rem;
+            margin-left: 8rem;
+            & li {
+                font-size: 5rem;
+                letter-spacing: 0.2rem;
+                line-height: 7rem;
+            }
+        }
+    
+        &-close {
+            position: relative;
+            top: 0;
+            z-index: 2;
         }
     }
 }

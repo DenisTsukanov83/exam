@@ -1,0 +1,155 @@
+// main: style.less
+
+.forms {
+    padding: 3rem 10rem;
+    & h3 {
+        text-align: center;
+        font-size: georgia-regular;
+    }
+
+    & input {
+        border-bottom: 0.2rem solid @color-primary !important;
+    }
+
+    &-block1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .name, .email, .phone {
+        width: 20rem;
+
+        & input {
+            width: 20rem;
+        }
+    }
+
+    &-title {
+        font-size: 1.9rem;
+    }
+
+    &-block3 {
+        & textarea {
+            border: none;
+            border-bottom: 0.2rem solid @color-primary !important;
+        }
+    }
+
+    &-send {
+        color: @color-dark-3xl;
+        background-color: @color-white;
+        border: 0.2rem solid @color-primary;
+        padding: 0.8rem 0rem;
+        font-size: 1.45rem;
+        font-family: georgia-regular;
+        border-radius: 3rem;
+        margin: auto;
+        margin-top: 2.4rem;
+        display: block;
+        transition: background 0.5s;
+        text-align: center;
+        width: 15rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: @color-primary-light;
+            border: 0.2rem solid @color-primary-light;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+    .forms {
+        padding: 3rem 10rem;
+        & h3 {
+            font-size: 4.8rem;
+            letter-spacing: 0.15rem;
+        }
+    
+        & input {
+            border-bottom: 0.4rem solid @color-primary !important;
+        }
+    
+        & .name, .email, .phone {
+            width: 20rem;
+    
+            & input {
+                width: 20rem;
+            }
+        }
+    
+        &-title {
+            font-size: 2.9rem;
+        }
+    
+        &-block3 {
+            & textarea {
+                height: 5rem;
+                border-bottom: 0.4rem solid @color-primary !important;
+                font-size: 2rem;
+            }
+        }
+    
+        &-send {
+            border: 0.3rem solid @color-primary;
+            padding: 1.3rem 0;
+            font-size: 2.4rem;
+            border-radius: 3.4rem;
+            margin-top: 3.8rem;
+            width: 24rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .forms {
+        padding: 8rem 10rem;
+        & h3 {
+            font-size: 7.8rem;
+            letter-spacing: 0.15rem;
+        }
+
+        &-block1 {
+            flex-direction: column;
+        }
+    
+        & input {
+            border-bottom: 0.6rem solid @color-primary !important;
+        }
+    
+        & .name, .email, .phone {
+    
+            & input {
+                width: 50rem;
+                height: 8rem;
+                font-size: 3rem;
+            }
+        }
+
+        &-select {
+            height: 8rem !important;
+            font-size: 3rem !important;
+        }
+    
+        &-title {
+            font-size: 5.5rem;
+        }
+    
+        &-block3 {
+            & textarea {
+                height: 10rem;
+                border-bottom: 0.6rem solid @color-primary !important;
+                font-size: 3rem;
+            }
+        }
+    
+        &-send {
+            border: 0.6rem solid @color-primary;
+                padding: 3.4rem 0;
+                font-size: 5.8rem;
+                border-radius: 10rem;
+                margin-top: 9.2rem;
+                width: 59rem;
+        }
+    }
+}

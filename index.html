@@ -116,6 +116,11 @@
             </div>
             <button class="friends-btn">Get to know the rest</button>
         </section>
+        <section class="paralax">
+            <div class="parallax-container">
+                <div class="parallax"><img src="assets/icons/parallax.jpg"></div>
+            </div>
+        </section>
 
         <section class="help">
             <h3>How you can help our shelter</h3>
@@ -181,6 +186,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="forms">
+            <h3>Write to us:</h3>
+            <form class="forms-wrap" action="mailto:tsukanovdenis83@yandex.ru">
+                <div class="forms-block1">
+                    <div class="name">
+                        <div class="forms-title">
+                            Name:
+                        </div>
+                        <input type="text">
+                    </div>
+
+                    <div class="email">
+                        <div class="forms-title">
+                            Email:
+                        </div>
+                        <input type="email">
+                    </div>
+
+                    <div class="phone">
+                        <div class="forms-title">
+                            Phone:
+                        </div>
+                        <input type="text" placeholder="+7 (---) --- -- --">
+                    </div>
+                </div>
+
+                <div class="forms-block2">
+                    <div class="forms-title">
+                        Topic:
+                    </div>
+
+                    <input class="forms-select" type="text" name="subject">
+                </div>
+
+                <div class="forms-block3">
+                    <div class="forms-title">
+                        Message
+                    </div>
+                    <textarea name="body" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="forms-block4">
+                    <button class="forms-send">send</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
@@ -224,7 +276,9 @@
                 preventScrolling: true,
             });
 
-            $('.modal').modal();
+            $('.modal').modal({
+                preventScrolling: false,
+            });
 
             $('.parallax').parallax();
         });

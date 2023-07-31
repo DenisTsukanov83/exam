@@ -93,6 +93,7 @@ html {
   border-radius: 3rem;
   margin-top: 3.4rem;
   transition: background 0.5s;
+  cursor: pointer;
 }
 .header .btns:hover {
   background-color: #FDDCC4;
@@ -527,6 +528,10 @@ html {
   margin-top: 4.5rem;
   display: block;
   transition: background 0.5s;
+  cursor: pointer;
+}
+.friends-btn:hover {
+  background-color: #FDDCC4;
 }
 .friends-btns {
   display: none;
@@ -574,6 +579,11 @@ html {
   transition: background 0.5s;
   text-align: center;
   width: 15rem;
+  cursor: pointer;
+}
+.friends-item .learn:hover {
+  background-color: #FDDCC4;
+  border: 0.2rem solid #FDDCC4;
 }
 @media screen and (max-width: 1000px) and (min-width: 769px) {
   .friends {
@@ -930,6 +940,12 @@ html {
 }
 .to-right-s {
   animation: to-right-s 0.5s;
+}
+.parallax-container {
+  height: 25rem;
+}
+.parallax img {
+  width: 100%;
 }
 .help {
   padding: 6.5rem 4.2rem 11.4rem 4.2rem;
@@ -1315,6 +1331,137 @@ html {
     letter-spacing: 0.05rem;
   }
 }
+.forms {
+  padding: 3rem 10rem;
+}
+.forms h3 {
+  text-align: center;
+  font-size: georgia-regular;
+}
+.forms input {
+  border-bottom: 0.2rem solid #F1CDB3 !important;
+}
+.forms-block1 {
+  display: flex;
+  justify-content: space-between;
+}
+.forms .name,
+.forms .email,
+.forms .phone {
+  width: 20rem;
+}
+.forms .name input,
+.forms .email input,
+.forms .phone input {
+  width: 20rem;
+}
+.forms-title {
+  font-size: 1.9rem;
+}
+.forms-block3 textarea {
+  border: none;
+  border-bottom: 0.2rem solid #F1CDB3 !important;
+}
+.forms-send {
+  color: #292929;
+  background-color: #FFFFFF;
+  border: 0.2rem solid #F1CDB3;
+  padding: 0.8rem 0rem;
+  font-size: 1.45rem;
+  font-family: georgia-regular;
+  border-radius: 3rem;
+  margin: auto;
+  margin-top: 2.4rem;
+  display: block;
+  transition: background 0.5s;
+  text-align: center;
+  width: 15rem;
+  cursor: pointer;
+}
+.forms-send:hover {
+  background-color: #FDDCC4;
+  border: 0.2rem solid #FDDCC4;
+}
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+  .forms {
+    padding: 3rem 10rem;
+  }
+  .forms h3 {
+    font-size: 4.8rem;
+    letter-spacing: 0.15rem;
+  }
+  .forms input {
+    border-bottom: 0.4rem solid #F1CDB3 !important;
+  }
+  .forms .name,
+  .forms .email,
+  .forms .phone {
+    width: 20rem;
+  }
+  .forms .name input,
+  .forms .email input,
+  .forms .phone input {
+    width: 20rem;
+  }
+  .forms-title {
+    font-size: 2.9rem;
+  }
+  .forms-block3 textarea {
+    height: 5rem;
+    border-bottom: 0.4rem solid #F1CDB3 !important;
+    font-size: 2rem;
+  }
+  .forms-send {
+    border: 0.3rem solid #F1CDB3;
+    padding: 1.3rem 0;
+    font-size: 2.4rem;
+    border-radius: 3.4rem;
+    margin-top: 3.8rem;
+    width: 24rem;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .forms {
+    padding: 8rem 10rem;
+  }
+  .forms h3 {
+    font-size: 7.8rem;
+    letter-spacing: 0.15rem;
+  }
+  .forms-block1 {
+    flex-direction: column;
+  }
+  .forms input {
+    border-bottom: 0.6rem solid #F1CDB3 !important;
+  }
+  .forms .name input,
+  .forms .email input,
+  .forms .phone input {
+    width: 50rem;
+    height: 8rem;
+    font-size: 3rem;
+  }
+  .forms-select {
+    height: 8rem !important;
+    font-size: 3rem !important;
+  }
+  .forms-title {
+    font-size: 5.5rem;
+  }
+  .forms-block3 textarea {
+    height: 10rem;
+    border-bottom: 0.6rem solid #F1CDB3 !important;
+    font-size: 3rem;
+  }
+  .forms-send {
+    border: 0.6rem solid #F1CDB3;
+    padding: 3.4rem 0;
+    font-size: 5.8rem;
+    border-radius: 10rem;
+    margin-top: 9.2rem;
+    width: 59rem;
+  }
+}
 .footer {
   display: grid;
   grid-template-columns: 34.3rem 30rem 30rem;
@@ -1336,11 +1483,16 @@ html {
 .footer-links {
   display: flex;
   justify-content: space-between;
+  font-family: georgia-regular;
   color: #F1CDB3;
   width: 19.5rem;
   font-size: 1.6rem;
   letter-spacing: 0.08rem;
   margin-bottom: 3.5rem;
+  cursor: pointer;
+}
+.footer-links:hover {
+  color: #F6F6F6;
 }
 .footer-contacts img {
   width: 3rem;

@@ -50,6 +50,11 @@
         margin-top: 4.5rem;
         display: block;
         transition: background 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: @color-primary-light;
+        }
     }
 
     &-btns {
@@ -103,6 +108,12 @@
             transition: background 0.5s;
             text-align: center;
             width: 15rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: @color-primary-light;
+                border: 0.2rem solid @color-primary-light;
+            }
         }
     }
 }
